@@ -99,7 +99,7 @@ Stores categories such as infrastructure, road obstruction, concert, market, or 
 | Column | PostgreSQL type | Constraints / notes |
 |---|---|---|
 | `id` | `UUID` | Primary key. |
-| `name` | `VARCHAR(80)` | Required; unique category name. |
+| `name` | `VARCHAR(100)` | Required; unique category name. |
 | `description` | `TEXT` | Optional explanation shown to users. |
 | `is_active` | `BOOLEAN` | Required; defaults to `TRUE`. Inactive categories are hidden from new submissions but remain on existing records. |
 | `created_at` | `TIMESTAMPTZ` | Required; defaults to the current time. |
